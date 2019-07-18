@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel ="stylesheet" href="style.css" type="text/css">
+  <script type = "text/javascript" src = "javascript.js" ></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body>
+	<div class="container" id="element">
+		<h2 class="header">Attempt All the Questions</h2>
+		<div class="mySlides">
+		    <h2 id="tag0">This is first question</h2>
+		    <div class="data">
+		    	<label class="container-fluid">Male
+			        <input name="question0" type="radio"  value="male" required>
+			        <span class="checkmark"></span>
+		        </label>
+		        <label class="container-fluid">Female
+			        <input name="question0"  type="radio" value="female" required>
+			        <span class="checkmark"></span>
+		        </label>
+		        <label class="container-fluid">Other
+			    	<input name="question0"  type="radio" value="other" required>
+			        <span class="checkmark"></span>
+		        </label>
+			    <button class="btn btn-left firstPrev " id="0"  onclick="subDivs(-1, id)" disabled>Previous</button>
+			    <button type = button id = 0 class="btn btn-right" onclick="plusDivs(1, id)">Next</button>
+		    </div>
+		</div>
+
+	 	<div class="mySlides">
+	    	<h2 id="tag1">This is second question</h2>
+	    	<div class="data">
+		        <label class="ckbox">Option 1
+		        	<input name="question1" type="checkbox" value="a">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 2
+		            <input name="question1"  type="checkbox" value="b">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 3
+		            <input name="question1"  type="checkbox" value="c">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 4
+		            <input name="question1"  type="checkbox" value="d">
+		            <span class="mark"></span>
+		        </label>
+		        <button class="btn btn-left" id="1" onclick="subDivs(-1,id)">Previous</button>
+			    <button type = button id = 1 class="btn btn-right" onclick="plusDivs(1, id)">Next</button>
+	   		</div>
+	    </div>
+  
+	    <div class="mySlides">
+		    <h2 id ="tag2">This is third question</h2>
+		    <div class="data">
+		        <label class="ckbox">Option 1
+		        	<input name="question2" type="checkbox" value="a">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 2
+		            <input name="question2"  type="checkbox" value="b">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 3
+		            <input name="question2"  type="checkbox" value="c">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 4
+		            <input name="question2"  type="checkbox" value="d">
+		            <span class="mark"></span>
+		        </label>
+		         <button class="btn btn-left" id="2" onclick="subDivs(-1, id)">Previous</button>
+			    <button type = button id = 2 class="btn btn-right" onclick="plusDivs(1, id)">Next</button>
+			</div>
+	    </div>
+
+  		<div class="mySlides">
+		    <h2 id = "tag3">This is fourth question</h2>
+		    <div class="data">
+		        <label class="ckbox">Option 1
+		        	<input name="question3" type="checkbox" value="a">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 2
+		            <input name="question3"  type="checkbox" value="b">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 3
+		            <input name="question3"  type="checkbox" value="c">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 4
+		            <input name="question3"  type="checkbox" value="d">
+		            <span class="mark"></span>
+		        </label>
+		         <button class="btn btn-left" id="3" onclick="subDivs(-1,id)">Previous</button>
+			    <button type = button id = 3 class="btn btn-right" onclick="plusDivs(1, id)">Next</button>
+		    </div>
+ 		 </div>
+
+ 		 <div class="mySlides">
+		    <h2 id ="tag4">This is fifth question</h2>
+		    <div class="data">
+		    	<label> Enter answer:
+		    		<input type="number" id ="question4" value="">
+		    	</label>
+		        <button class="btn btn-left" id="4" onclick="subDivs(-1,id)">Previous</button>
+			    <button type = button id = 4 class="btn btn-right" onclick="plusDivs(1, id)">Next</button>
+		    </div>
+ 		 </div>
+
+	  	<div class="mySlides">
+		    <h2 id ="tag5">This is sixth question</h2>
+		    <div class="data">
+		        <label class="ckbox">Option 1
+		            <input name="question5" type="checkbox" value="a">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 2
+		            <input name="question5"  type="checkbox" value="b">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 3
+		            <input name="question5"  type="checkbox" value="c">
+		            <span class="mark"></span>
+		        </label>
+		        <label class="ckbox">Option 4
+		            <input name="question5"  type="checkbox" value="d">
+		            <span class="mark"></span>
+		        </label>
+		        <button class="btn btn-left" id="5" onclick="subDivs(-1, id)">Previous</button>
+			    <button type = button id = 5 class="btn btn-right" onclick="plusDivs(1, id); showResult(id);">Submit</button>
+		    </div>
+  		</div>
+
+	    <div class="mySlides">
+	    	<h2 id ="score">Scores</h2>
+	    </div>
+    </div>
+
+	<div class="Fullscreen">
+	    <button class="btn btnFullScreen" onclick="openFullscreen();">Fullscreen</button>
+		<p><strong>Tip:</strong> Press the "Esc" key to exit full screen.</p>
+	</div>
+
+	<script type="text/javascript">
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		var scores = [] ;
+	</script>
+
+	<script type="text/javascript">
+		/* Get into full screen */
+		var element = document.getElementById("element");
+
+		function openFullscreen() {
+		    document.documentElement.webkitRequestFullScreen();
+		}
+	</script>
+</body>
+</html>

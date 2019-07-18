@@ -1,0 +1,161 @@
+.mySlides{
+  text-align: center;
+}
+
+.data{
+  width: 60%;
+  display: inline-block;
+}
+
+.header{
+  font-family: Arial, Georgia;
+  font-size: 24px;
+  text-align: center;
+}
+
+.btn, .btnFullScreen{
+  background-color: purple;
+  width: 110px;
+
+}
+
+.btn{
+	margin-top: 2%;
+ /* margin-left: 20px;
+  margin-right: 20px;*/
+  border-radius: 0px !important;
+  color: #fff;
+
+}
+
+.btn:hover{
+  background-color:#cccccc!important;
+  color: #000!important;
+}
+
+.btn-left{
+  float: left;
+}
+
+.btn-right{
+  float: right;
+}
+.firstPrev{
+  cursor:not-allowed;
+  background-color:#cccccc!important;
+  color: #000!important;
+
+}
+
+.w3-hover-black:hover {
+    color: purple!important;
+
+    }
+
+ .resultPage{
+ 	visibility: hidden;
+ }
+
+ .Fullscreen{
+  margin-top: 10%;
+  text-align: center;
+ }
+
+
+/*For both radio button and checkbox*/
+.container-fluid, .ckbox {
+  padding-left: 0px;
+}
+
+/*For text, radio button and checkbox*/
+.text,.container-fluid, .ckbox{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  color: #898989;
+  margin-left: 30px;
+  margin-top: 10px;
+  text-align: -webkit-left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*Only for checkbox*/
+.ckbox {
+  margin-bottom: 12px;
+} 
+
+/* Hide the browser's default radio button */
+input[type=radio], input[type=checkbox] {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button and checkbox*/
+.checkmark, .mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border:2px solid #898989;
+  margin-left: -30px;
+}
+/* Create a custom radio button only */
+.checkmark {
+  border-radius: 50%;
+   
+}
+
+/* When the radio button is checked */
+input:checked ~ .checkmark {
+  background-color: #ffffff;
+  border:2px solid purple;
+
+}
+
+/* When the checkbox is checked*/
+.ckbox input:checked ~ .mark {
+  background-color: purple;
+  border:2px solid purple;
+}
+
+/* Create the indicator (the dot/circle/checkmark - hidden when not checked) */
+.checkmark:after, .mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (checkmark/circle) when checked */
+input:checked ~ .checkmark:after, .ckbox input:checked ~ .mark:after  {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  margin:0px;
+  border-radius: 50%;
+  background: purple;
+}
+
+/* Style the checkmark/indicator */
+.ckbox .mark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
